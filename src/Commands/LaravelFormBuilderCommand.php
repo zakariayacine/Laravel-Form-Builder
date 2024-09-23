@@ -1,6 +1,6 @@
 <?php
 
-namespace Zakaria Yacine Boucetta\LaravelFormBuilder\Commands;
+namespace ZakariaYacineBoucetta\LaravelFormBuilder\Commands;
 
 use Illuminate\Console\Command;
 

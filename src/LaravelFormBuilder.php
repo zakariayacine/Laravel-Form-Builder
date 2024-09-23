@@ -1,5 +1,5 @@
 <?php
 
-namespace Zakaria Yacine Boucetta\LaravelFormBuilder;
+namespace ZakariaYacineBoucetta\LaravelFormBuilder;
 
 class LaravelFormBuilder {}

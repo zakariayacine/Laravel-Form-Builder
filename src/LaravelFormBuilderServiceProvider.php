@@ -1,10 +1,10 @@
 <?php
 
-namespace Zakaria Yacine Boucetta\LaravelFormBuilder;
+namespace ZakariaYacineBoucetta\LaravelFormBuilder;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Zakaria Yacine Boucetta\LaravelFormBuilder\Commands\LaravelFormBuilderCommand;
+use ZakariaYacineBoucetta\LaravelFormBuilder\Commands\LaravelFormBuilderCommand;
 
 class LaravelFormBuilderServiceProvider extends PackageServiceProvider
 {

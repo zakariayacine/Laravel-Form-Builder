@@ -52,8 +52,8 @@ php artisan vendor:publish --tag="laravel-form-builder-views"
 ## Usage
 
 ```php
-$laravelFormBuilder = new Zakaria Yacine Boucetta\LaravelFormBuilder();
-echo $laravelFormBuilder->echoPhrase('Hello, Zakaria Yacine Boucetta!');
+$laravelFormBuilder = new ZakariaYacineBoucetta\LaravelFormBuilder();
+echo $laravelFormBuilder->echoPhrase('Hello, ZakariaYacineBoucetta!');
 ```
 
 ## Testing
@@ -76,7 +76,7 @@ Please review [our security policy](../../security/policy) on how to report secu
 
 ## Credits
 
-- [zakaria yacine boucetta](https://github.com/zakaria yacine)
+- [ZakariaYacineBoucetta](https://github.com/zakaria yacine)
 - [All Contributors](../../contributors)
 
 ## License

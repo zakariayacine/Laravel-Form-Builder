@@ -1,5 +1,5 @@
 <?php
 
-use Zakaria Yacine Boucetta\LaravelFormBuilder\Tests\TestCase;
+use ZakariaYacineBoucetta\LaravelFormBuilder\Tests\TestCase;
 
 uses(TestCase::class)->in(__DIR__);

@@ -1,6 +1,6 @@
 <?php
 
-// config for Zakaria Yacine Boucetta/LaravelFormBuilder
+// config for ZakariaYacineBoucetta/LaravelFormBuilder
 return [
 
 ];

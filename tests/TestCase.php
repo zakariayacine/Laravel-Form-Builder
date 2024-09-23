@@ -1,10 +1,10 @@
 <?php
 
-namespace Zakaria Yacine Boucetta\LaravelFormBuilder\Tests;
+namespace ZakariaYacineBoucetta\LaravelFormBuilder\Tests;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Zakaria Yacine Boucetta\LaravelFormBuilder\LaravelFormBuilderServiceProvider;
+use ZakariaYacineBoucetta\LaravelFormBuilder\LaravelFormBuilderServiceProvider;
 
 class TestCase extends Orchestra
 {
@@ -13,7 +13,7 @@ class TestCase extends Orchestra
         parent::setUp();
 
         Factory::guessFactoryNamesUsing(
-            fn (string $modelName) => 'Zakaria Yacine Boucetta\\LaravelFormBuilder\\Database\\Factories\\'.class_basename($modelName).'Factory'
+            fn (string $modelName) => 'ZakariaYacineBoucetta\\LaravelFormBuilder\\Database\\Factories\\'.class_basename($modelName).'Factory'
         );
     }
 

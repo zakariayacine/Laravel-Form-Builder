@@ -2,7 +2,7 @@
     "name": "zakaria-yacine/laravel-form-builder",
     "description": "AutoFormGenerator is a Laravel package that streamlines form creation by automatically generating forms and their corresponding input fields using Artisan commands. Simplify repetitive tasks, reduce development time, and enhance productivity by generating fully customizable forms directly from the console. Perfect for CRUD applications and rapid prototyping.",
     "keywords": [
-        "zakaria yacine boucetta",
+        "ZakariaYacineBoucetta",
         "laravel",
         "laravel-form-builder"
     ],
@@ -10,7 +10,7 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "zakaria yacine boucetta",
+            "name": "ZakariaYacineBoucetta",
             "email": "zakaria-yacine@hotmail.com",
             "role": "Developer"
         }
@@ -30,13 +30,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Zakaria Yacine Boucetta\\LaravelFormBuilder\\": "src/",
-            "Zakaria Yacine Boucetta\\LaravelFormBuilder\\Database\\Factories\\": "database/factories/"
+            "ZakariaYacineBoucetta\\LaravelFormBuilder\\": "src/",
+            "ZakariaYacineBoucetta\\LaravelFormBuilder\\Database\\Factories\\": "database/factories/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Zakaria Yacine Boucetta\\LaravelFormBuilder\\Tests\\": "tests/",
+            "ZakariaYacineBoucetta\\LaravelFormBuilder\\Tests\\": "tests/",
             "Workbench\\App\\": "workbench/app/"
         }
     },
@@ -68,10 +68,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Zakaria Yacine Boucetta\\LaravelFormBuilder\\LaravelFormBuilderServiceProvider"
+                "ZakariaYacineBoucetta\\LaravelFormBuilder\\LaravelFormBuilderServiceProvider"
             ],
             "aliases": {
-                "LaravelFormBuilder": "Zakaria Yacine Boucetta\\LaravelFormBuilder\\Facades\\LaravelFormBuilder"
+                "LaravelFormBuilder": "ZakariaYacineBoucetta\\LaravelFormBuilder\\Facades\\LaravelFormBuilder"
             }
         }
     },
