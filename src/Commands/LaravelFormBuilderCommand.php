@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace Zakaria Yacine Boucetta\LaravelFormBuilder\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class LaravelFormBuilderCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'laravel-form-builder';
 
     public $description = 'My command';
 
