@@ -14,7 +14,7 @@ class LaravelFormBuilderServiceProvider extends PackageServiceProvider
     {
         $package
             ->name('laravel-form-builder')
-            ->hasConfigFile('formbuilder')
+            ->hasConfigFile(['formbuilder'])
             ->hasCommand(LaravelFormBuilderCommand::class)
             ->hasInstallCommand(function(InstallCommand $command) {
                 $command
@@ -42,3 +42,4 @@ class LaravelFormBuilderServiceProvider extends PackageServiceProvider
         parent::boot();
     }
 }
+//php artisan vendor:publish --tag=formbuilder
