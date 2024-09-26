@@ -5,21 +5,40 @@ namespace ZakariaYacineBoucetta\LaravelFormBuilder;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 use ZakariaYacineBoucetta\LaravelFormBuilder\Commands\LaravelFormBuilderCommand;
+use ZakariaYacineBoucetta\LaravelFormBuilder\Services\FormBuilderService;
+use Spatie\LaravelPackageTools\Commands\InstallCommand;
 
 class LaravelFormBuilderServiceProvider extends PackageServiceProvider
 {
     public function configurePackage(Package $package): void
     {
-        /*
-         * This class is a Package Service Provider
-         *
-         * More info: https://github.com/spatie/laravel-package-tools
-         */
         $package
             ->name('laravel-form-builder')
-            ->hasConfigFile()
-            ->hasViews()
-            ->hasMigration('create_laravel_form_builder_table')
-            ->hasCommand(LaravelFormBuilderCommand::class);
+            ->hasConfigFile('formbuilder')
+            ->hasCommand(LaravelFormBuilderCommand::class)
+            ->hasInstallCommand(function(InstallCommand $command) {
+                $command
+                    ->publishConfigFile()
+                    ->copyAndRegisterServiceProviderInApp()
+                    ->askToStarRepoOnGitHub('zakariayacine/Laravel-Form-Builder')
+                    ->endWith(function(InstallCommand $command) {
+                        $command->info('Have a great day!');
+                    });
+            });;
+    }
+
+    public function register()
+    {
+        parent::register();
+
+        // Enregistre le service FormBuilderService comme singleton
+        $this->app->singleton('formbuilder', function ($app) {
+            return new FormBuilderService();
+        });
+    }
+
+    public function boot()
+    {
+        parent::boot();
     }
 }
