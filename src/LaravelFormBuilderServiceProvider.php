@@ -32,7 +32,7 @@ class LaravelFormBuilderServiceProvider extends PackageServiceProvider
         parent::register();
 
         // Enregistre le service FormBuilderService comme singleton
-        $this->app->singleton('formbuilder', function ($app) {
+        $this->app->singleton('FormBuilderService', function ($app) {
             return new FormBuilderService();
         });
     }
