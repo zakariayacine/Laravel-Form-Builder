@@ -28,7 +28,7 @@ class LaravelFormBuilderCommand extends Command
     {
         $inputs = [];
         $cssFramework = $this->choice('Select CSS framework', ['Bootstrap', 'Tailwind CSS']);
-        $config = config('formbuilder'); // Charge la configuration
+        $config = config('form-builder'); // Charge la configuration
 
         $cssClasses = $cssFramework === 'Bootstrap' ? $config['bootstrapClasses'] : $config['tailwindClasses'];
         $buttonColors = $cssFramework === 'Bootstrap' ? $config['bootstrapButtonColors'] : $config['tailwindButtonColors'];

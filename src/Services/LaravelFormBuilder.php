@@ -4,7 +4,7 @@ namespace ZakariaYacineBoucetta\LaravelFormBuilder\Services;
 
 use Illuminate\Support\Str;
 
-class FormBuilderService
+class LaravelFormBuilder
 {
     public function generateFormComponent($inputs, $buttonName, $buttonClass, $method, $route)
     {
