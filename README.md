@@ -1,4 +1,4 @@
-# AutoFormGenerator is a Laravel package that streamlines form creation by automatically generating forms and their corresponding input fields using Artisan commands. Simplify repetitive tasks, reduce development time, and enhance productivity by generating fully customizable forms directly from the console. Perfect for CRUD applications and rapid prototyping.
+# LaravelFormBuilder is a Laravel package that streamlines form creation by automatically generating forms and their corresponding input fields using Artisan commands. Simplify repetitive tasks, reduce development time, and enhance productivity by generating fully customizable forms directly from the console. Perfect for CRUD applications and rapid prototyping
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/zakaria-yacine/laravel-form-builder.svg?style=flat-square)](https://packagist.org/packages/zakaria-yacine/laravel-form-builder)
 [![Total Downloads](https://img.shields.io/packagist/dt/zakaria-yacine/laravel-form-builder.svg?style=flat-square)](https://packagist.org/packages/zakaria-yacine/laravel-form-builder)
@@ -14,7 +14,7 @@ composer require zakaria-yacine/laravel-form-builder
 You can publish the config file with:
 
 ```bash
-php artisan vendor:publish --tag="formbuilder"
+php artisan vendor:publish --tag=form-builder-config
 ```
 
 This is the contents of the published config file:
