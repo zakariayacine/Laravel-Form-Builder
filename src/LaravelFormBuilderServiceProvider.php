@@ -13,7 +13,7 @@ class LaravelFormBuilderServiceProvider extends PackageServiceProvider
     public function configurePackage(Package $package): void
     {
         $package
-            ->name('laravel-form-builder')
+            ->name('form-builder')
             ->hasConfigFile()
             ->hasCommand(LaravelFormBuilderCommand::class)
             ->hasInstallCommand(function(InstallCommand $command) {

@@ -1,10 +1,20 @@
 <?php
 
-// config for ZakariaYacineBoucetta/LaravelFormBuilder
 return [
 
     'inputTypes' => [
-        'text', 'email', 'password', 'number', 'file', 'submit', 'button', 'radio', 'checkbox', 'hidden', 'date', 'select',
+        'text',
+        'email',
+        'password',
+        'number',
+        'file',
+        'submit',
+        'button',
+        'radio',
+        'checkbox',
+        'hidden',
+        'date',
+        'select',
     ],
 
     'bootstrapClasses' => [
